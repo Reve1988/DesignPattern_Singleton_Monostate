@@ -2,6 +2,8 @@ package org.headfirst.singleton;
 
 public class Singleton {
 	private static Singleton instance;
+	
+	private String str;
 
 	private Singleton() {
 	}
@@ -13,5 +15,13 @@ public class Singleton {
 		}
 
 		return instance;
+	}
+
+	public String getStr() {
+		return str;
+	}
+
+	public void setStr(String str) {
+		this.str = str;
 	}
 }
